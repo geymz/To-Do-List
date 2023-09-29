@@ -1,0 +1,124 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.todo-list {
+  border: 1px solid rgba(177, 194, 187, 0.247);
+  box-shadow: 10px 10px 20px 3px rgba(0, 0, 0, 0.62);
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: auto;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+h2 {
+  letter-spacing: 2px;
+  padding: 40px 50px 10px;
+}
+
+.form {
+  padding-bottom: 50px;
+  display: flex;
+  position: relative;
+}
+
+.text {
+  color: #444;
+  width: 500px;
+  height: 80px;
+  margin: 40px 40px 10px;
+  font-size: 25px;
+  padding-left: 25px;
+  background-color: #f2f2f2;
+  outline: none;
+  border: 1px solid rgba(177, 194, 187, 0.247);
+  border-radius: 40px;
+}
+
+.text::placeholder {
+  color: #d5d5d5;
+}
+
+.btn {
+  height: 80px;
+  width: 130px;
+  border: 1px solid rgba(177, 194, 187, 0.18);
+  background-color: rgba(255, 168, 127, 0.635);
+  border-radius: 40px;
+  position: absolute;
+  top: 40px;
+  right: 58px;
+  font-size: 25px;
+  cursor: pointer;
+  text-align: center;
+  padding: 25px;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background-color: rgb(215, 139, 104);
+}
+
+ul {
+  margin: 10px;
+  list-style-type: none;
+}
+
+ul li {
+  border-top: 1px solid rgba(177, 194, 187, 0.247);
+  cursor: pointer;
+  padding: 10px 40px;
+  position: relative;
+  font-size: 25px;
+  border-radius: 20px;
+  transition: 0.2s;
+  display: flex;
+}
+
+ul li:nth-child(even) {
+  background: #f9f9f9;
+}
+
+ul li:hover {
+  background-color: #ddd;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  left: 16px;
+  top: 10px;
+  border-color: rgb(85, 247, 133);
+  border-style: solid;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 9px 16px 5px 16px;
+  font-size: 30px;
+  color: red;
+}
+
+.close:hover {
+  background-color: rgba(255, 168, 127, 0.635);
+  color: #fff;
+  border-radius: 20px;
+}
